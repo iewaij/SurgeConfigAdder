@@ -1,5 +1,5 @@
 # SurgeConfigAdder
-使用命令行或者 Alfred 为你的 Surge 域名配置文件添加规则。
+使用命令行或者 Alfred 为 Surge 配置文件添加规则。
 
 Add domain rules for your surge config file, using terminal or Alfred.
 
