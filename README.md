@@ -3,7 +3,7 @@
 Add domain rules for your surge config file, better with Alfred.
 
 ## 配置
-下载 `surgeadder.py`，更改文件中的 `path` 变量为 Surge 配置文件的位置。
+下载 `surgeadder.py`，更改文件中的 `path` 变量为 Surge 配置文件的位置，更改 `'FINAL,DIRECT'` 为 Surge 配置文件的 FINAL 字段（如果你不知道要不要改，就别改了）。
 
 ## 命令行中使用
 更改路径至 `surgeadder.py` 所在文件夹。
