@@ -19,9 +19,10 @@ Add domain rules for your surge config file, using terminal or Alfred.
 在 Surge 任务栏面板里点击重新加载。或者使用 surge-cli 命令重新加载配置文件。
 ![Screen Shot 2017-08-31 at 12.43.18 AM](https://i.loli.net/2017/08/31/59a6eb33cb7b6.png)
 
-## Alfred 中使用
 
-打开终端，输入以下命令启用 surge-cli。
+## 启用 Surge-Cli
+
+打开终端，输入以下命令启用 `surge-cli`。
 
 ```ln -s /Applications/Surge.app/Contents/Applications/surge-cli /usr/local/bin/surge-cli```
 
@@ -29,6 +30,8 @@ Add domain rules for your surge config file, using terminal or Alfred.
 
 经过我的测试，此时输入 `surge-cli reload` 命令就能重新加载配置文件。如果失败，请参阅 [Surge CLI 开始测试](https://medium.com/@Blankwonder/surge-cli-开始测试-70bef9fd7169)。
 
+## Alfred 中使用
+启用 `surge-cli`。
 
 确认你已经购买 Alfred Powerpack，下载 [`SurgeConfigAdder.alfredworkflow`](https://github.com/iewaij/SurgeConfigAdder/blob/master/SurgeConfigAdder.alfredworkflow?raw=true) 并导入 Alfred。编辑终端命令，更改 `path` 变量为配置文件所在位置，务必保留引号。
 ![Screen Shot 2017-08-31 at 12.30.21 AM](https://i.loli.net/2017/08/31/59a6e8267378f.png)
@@ -41,3 +44,6 @@ Add domain rules for your surge config file, using terminal or Alfred.
 
 ## 实现逻辑
 使用 Python3 查找 Surge 配置文件 `surge.conf` 的 FINAL 字段，并在该位置覆盖 `DOMAIN-SUFFIX,domain.com,Proxy` 和 FINAL 字段。如果你对改动有其他要求，编辑`f.write('DOMAIN-SUFFIX,%s,Proxy\n%s\n' %(inputDomain, finalRule))`。改动完毕后，使用 `surge-cli reload` 命令重新加载配置文件。
+
+## TODO
+- [ ] 在 Alfred 中识别 `surge-cli` 是否启用（还没想好怎么实现）
