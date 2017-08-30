@@ -22,6 +22,7 @@ Add domain rules for your surge config file, using terminal or Alfred.
 ## Alfred 中使用
 
 打开终端，输入以下命令启用 surge-cli。
+
 ```ln -s /Applications/Surge.app/Contents/Applications/surge-cli /usr/local/bin/surge-cli```
 
 注意，Surge 在 2.0 版本以后改变了 surge-cli 的位置，如果你在之前启用了 surge-cli，需要前往 `/usr/local/bin/` 目录删除 `surge-cli`。
