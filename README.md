@@ -6,8 +6,6 @@ Add domain rules for your surge config file, using terminal or Alfred.
 ## 命令行中使用
 下载 [`surgeadder.py`](https://raw.githubusercontent.com/iewaij/SurgeConfigAdder/master/surgeradder.py)，更改文件中的 `path` 变量为 Surge 配置文件的位置，务必保留引号。
 
-更改 `'FINAL,DIRECT'` 为 Surge 配置文件的 FINAL 字段（如果你不知道要不要改，就别改了）。
-
 更改路径至 `surgeadder.py` 所在文件夹。
 
 ```cd PATH/TO/FOLDER```
@@ -36,9 +34,6 @@ Add domain rules for your surge config file, using terminal or Alfred.
 确认你已经购买 Alfred Powerpack，下载 [`SurgeConfigAdder.alfredworkflow`](https://github.com/iewaij/SurgeConfigAdder/blob/master/SurgeConfigAdder.alfredworkflow?raw=true) 并导入 Alfred。编辑终端命令，更改 `path` 变量为配置文件所在位置，务必保留引号。
 ![Screen Shot 2017-08-31 at 12.30.21 AM](https://i.loli.net/2017/08/31/59a6e8267378f.png)
 
-更改 `FINAL,DIRECT` 为 Surge 配置文件的 FINAL 字段（如果你不知道要不要改，就别改了），务必保留引号。
-![Screen Shot 2017-08-31 at 12.31.08 AM](https://i.loli.net/2017/08/31/59a6e854632d6.png)
-
 在 Alfred 中输入 `add domain.com` 即可添加规则。
 ![Screen Shot 2017-08-30 at 11.26.09 PM](https://i.loli.net/2017/08/30/59a6d92b0008d.png)
 
@@ -47,3 +42,4 @@ Add domain rules for your surge config file, using terminal or Alfred.
 
 ## TODO
 - [ ] 在 Alfred 中识别 `surge-cli` 是否启用（还没想好怎么实现）
+- [ ] 通过 FINAL 字段判断添加的域名是走直路还是走代理
