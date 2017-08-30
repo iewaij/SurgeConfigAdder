@@ -40,7 +40,11 @@ Add domain rules for your surge config file, using terminal or Alfred.
 ## 实现逻辑
 使用 Python3 查找 Surge 配置文件 `surge.conf` 的 FINAL 字段，并在该位置覆盖 `DOMAIN-SUFFIX,domain.com,Proxy` 和 FINAL 字段。如果你对改动有其他要求，编辑`f.write('DOMAIN-SUFFIX,%s,Proxy\n%s\n' %(inputDomain, finalRule))`。改动完毕后，使用 `surge-cli reload` 命令重新加载配置文件。
 
+## 存在问题
+- 规则里的代理名默认是 `proxy`，请把 `proxy` 改成你用的代理名。
+
 ## TODO
+- [ ] 检测代理名和代理组（呃，我是写完了才发现这个问题很严重... 尽快修复）
 - [ ] 在 Alfred 中识别 `surge-cli` 是否启用（还没想好怎么实现）
 - [ ] 通过 FINAL 字段判断添加的域名是走直路还是走代理
 - [ ] 域名检测和修正
