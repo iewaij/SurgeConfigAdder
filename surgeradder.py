@@ -19,7 +19,7 @@ def  surgeAdder(path, finalRule = 'FINAL,DIRECT', inputDomain = sys.argv[1]):
         f.seek(ruleLoc,0)
 
         # Writing rule from input
-        f.write('DOMAIN-SUFFIX,%s,Proxy\n%s' %(inputDomain, finalRule))
+        f.write('DOMAIN-SUFFIX,%s,Proxy\n%s\n' %(inputDomain, finalRule))
     print('Add %s to config file successfully!' %inputDomain)
 
 surgeAdder(path)
