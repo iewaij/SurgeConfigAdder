@@ -43,3 +43,4 @@ Add domain rules for your surge config file, using terminal or Alfred.
 ## TODO
 - [ ] 在 Alfred 中识别 `surge-cli` 是否启用（还没想好怎么实现）
 - [ ] 通过 FINAL 字段判断添加的域名是走直路还是走代理
+- [ ] 域名检测和修正
