@@ -23,9 +23,9 @@ Add domain rules for your surge config file, using terminal or Alfred.
 打开终端，输入以下命令启用 surge-cli。
 ```ln -s /Applications/Surge.app/Contents/Applications/surge-cli /usr/local/bin/surge-cli```
 
-注意，Surge 在 2.0 版本以后改变了 surge-cli 的位置，如果你在之前启用了 surge-cli，需要前往 `/usr/local/bin/` 目录删除 `surge-cli`。
+注意，Surge 在 2.0 版本以后改变了 surge-cli 的位置，如果你在之前启用了 surge-cli，需要前往 `/usr/local/bin/` 目录删除 `surge-cli`。
 
-经过我的测试，此时输入 `surge-cli reload` 命令就能重新加载配置文件。如果这一步失败，请参阅 [Surge CLI 开始测试](https://medium.com/@Blankwonder/surge-cli-开始测试-70bef9fd7169)。
+经过我的测试，此时输入 `surge-cli reload` 命令就能重新加载配置文件。如果失败，请参阅 [Surge CLI 开始测试](https://medium.com/@Blankwonder/surge-cli-开始测试-70bef9fd7169)。
 
 
 确认你已经购买 Alfred Powerpack，下载 `SurgeConfigAdder.alfredworkflow` 并导入 Alfred。编辑终端命令，更改 `path` 变量为配置文件所在位置，务必保留引号。
