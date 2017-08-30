@@ -22,4 +22,4 @@ Add domain rules for your surge config file, better with Alfred.
 ![Screen Shot 2017-08-30 at 11.26.09 PM](https://i.loli.net/2017/08/30/59a6d92b0008d.png)
 
 ## 实现逻辑
-查找 Surge 配置文件 surge.conf 的 FINAL 字段，并在该位置覆盖 `DOMAIN-SUFFIX,domain.com,Proxy` 和 FINAL 字段。如果你对改动有其他要求，编辑`f.write('DOMAIN-SUFFIX,%s,Proxy\n%s\n' %(inputDomain, finalRule))`。
+查找 Surge 配置文件 surge.conf 的 FINAL 字段，并在该位置覆盖 `DOMAIN-SUFFIX,domain.com,Proxy` 和 FINAL 字段。如果你对改动有其他要求，编辑`f.write('DOMAIN-SUFFIX,%s,Proxy\n%s\n' %(inputDomain, finalRule))`。
