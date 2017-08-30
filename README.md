@@ -1,6 +1,6 @@
 # SurgeConfigAdder
-在命令行界面为你的 Surge 域名配置文件添加规则，搭配 Alfred 体验更佳。  
-Add domain rules for your surge config file, better with Alfred.
+使用命令行或者 Alfred 为你的 Surge 域名配置文件添加规则。
+Add domain rules for your surge config file, using terminal or Alfred.
 
 ## 命令行中使用
 下载 `surgeadder.py`，更改文件中的 `path` 变量为 Surge 配置文件的位置，务必保留引号。
