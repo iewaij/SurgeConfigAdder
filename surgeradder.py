@@ -7,7 +7,7 @@ path = '/Users/USERNAME/Library/Mobile Documents/iCloud~run~surge/Documents/NAME
 
 # Specify your FINAL rule, 'FINAL,DIRECT' as default
 # 请声明 Surge 文件中的 FINAL 语句, 默认为 'FINAL,DIRECT'
-def  surgeAdder(path, finalRule = 'FINAL,DIRECT', inputDomain = sys.argv[1]):
+def surgeAdder(path, finalRule = 'FINAL,DIRECT', inputDomain = sys.argv[1]):
     with open(path, 'r+') as f:
         content = f.read()
         # Look for where the finalRule starts
