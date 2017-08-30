@@ -1,6 +1,4 @@
-import os
 import re
-import pprint
 import sys
 
 # Specify your config file path
