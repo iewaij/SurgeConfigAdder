@@ -14,10 +14,8 @@ def surgeAdder(path, proxyName, finalRule = 'FINAL,DIRECT', inputDomain = sys.ar
         content = f.read()
         # Look for where the finalRule starts
         ruleLoc = re.search(finalRule, content).span()[0]
-
         # Seek the location where the finalRule starts
         f.seek(ruleLoc,0)
-
         # Writing rule from input
         f.write('DOMAIN-SUFFIX,%s,%s\n%s\n' %(inputDomain, proxyName, finalRule))
     print('Add %s to config file successfully!' %inputDomain)
