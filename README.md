@@ -18,7 +18,7 @@ Add domain rules for your surge config file, using terminal or Alfred.
 ![Screen Shot 2017-08-31 at 12.43.18 AM](https://i.loli.net/2017/08/31/59a6eb33cb7b6.png)
 
 
-## 启用 Surge-Cli
+## 启用 Surge-CLI
 
 打开终端，输入以下命令启用 `surge-cli`。
 
@@ -31,8 +31,13 @@ Add domain rules for your surge config file, using terminal or Alfred.
 ## Alfred 中使用
 启用 `surge-cli`。
 
-确认你已经购买 Alfred Powerpack，下载 [`SurgeConfigAdder.alfredworkflow`](https://github.com/iewaij/SurgeConfigAdder/blob/master/SurgeConfigAdder.alfredworkflow?raw=true) 并导入 Alfred。编辑终端命令，更改 `path` 变量为配置文件所在位置，务必保留引号。
+确认你已经购买 Alfred Powerpack，下载 [`SurgeConfigAdder.alfredworkflow`](https://github.com/iewaij/SurgeConfigAdder/blob/master/SurgeConfigAdder.alfredworkflow?raw=true) 并导入 Alfred。
+
+编辑终端命令，更改 `path` 变量为配置文件所在位置，务必保留引号。
 ![Screen Shot 2017-08-31 at 12.30.21 AM](https://i.loli.net/2017/08/31/59a6e8267378f.png)
+
+更改 `proxyName` 变量为代理名称，务必保留引号。
+![Screen Shot 2017-08-31 at 11.04.42 AM](https://i.loli.net/2017/08/31/59a77d26b038e.png)
 
 在 Alfred 中输入 `add domain.com` 即可添加规则。
 ![Screen Shot 2017-08-30 at 11.26.09 PM](https://i.loli.net/2017/08/30/59a6d92b0008d.png)
@@ -44,7 +49,9 @@ Add domain rules for your surge config file, using terminal or Alfred.
 - 规则里的代理名默认是 `proxy`，请把 `proxy` 改成你用的代理名。
 
 ## TODO
-- [ ] 检测代理名和代理组（呃，我是写完了才发现这个问题很严重... 尽快修复）
+- [ ] 检测代理名和代理组
 - [ ] 在 Alfred 中识别 `surge-cli` 是否启用（还没想好怎么实现）
 - [ ] 通过 FINAL 字段判断添加的域名是走直路还是走代理
 - [ ] 域名检测和修正
+- [ ] Apple-DNS 支持
+- [ ] GFW-list 支持
